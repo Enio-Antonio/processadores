@@ -10,6 +10,8 @@ instagram.addEventListener("click", alertarRedesSocias);
 
 twitter.addEventListener("click", alertarRedesSocias);
 
+//  Parte do menu dinâmico
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".parte_direita");
 

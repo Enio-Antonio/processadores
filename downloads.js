@@ -30,6 +30,9 @@ intel.addEventListener('click', () => {downloadFile('intel_i9.txt', './intel_i9.
 
 amd.addEventListener('click', () => {downloadFile('amd_r9', './amd_r9.txt')});
 
+
+//  Parte do menu dinâmico 
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".parte_direita");
 
