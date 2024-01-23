@@ -1,0 +1,170 @@
+* {
+    margin: 0%;
+    border: 0cap;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(254, 249, 249);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    /* padding-left: 3vw;
+    padding-right: 3vw; */
+    background-color: rgb(3, 3, 86);
+    color: white;
+    height: 100px;
+    /* width: 100vw; */
+}
+
+.header h1 {
+    margin-left: 25px;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.2s;
+}
+.header h1 a:hover {
+    color: #8e9caf;
+}
+
+.parte_direita {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.h2_1 {
+    margin: 15px;
+    
+}
+.h2_1 h2 a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.2s;
+}
+.h2_1 h2 a:hover {
+    color: #8e9caf;
+}
+.h2_2 {
+    margin: 15px;
+}
+.h2_2 h2 a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.2s;
+}
+.h2_2 h2 a:hover {
+    color: #8e9caf;
+}
+
+/* Meio do site */
+
+.conteiner {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    height: 450px;
+    margin-left: 20vw;
+    margin-right: 10vw;
+}
+
+.h1_conteiner {
+    position: relative;
+    left: -3vw;
+}
+
+.download {
+    height: 155px;
+    width: 50vw;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+    top: 8vw;
+    left: 3vw;
+    margin-top: 10px;
+    background-color: #d7e2f1;
+    transition-duration: 0.2s;
+}
+.download:hover {
+    background-color: rgb(16, 16, 79);
+    color: white;
+}
+
+ /* Footer */
+
+.footer {
+    display: flex;
+    height: 120px;
+    background-color: rgb(2, 2, 39);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icone {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-microchip {
+    font-size: 30px;
+    transition-duration: 0.2s;
+}
+.fa-microchip:hover{
+    color: #8e9caf;
+}
+.fa-instagram {
+    font-size: 30px;
+    transition-duration: 0.2s;
+}
+.fa-instagram:hover {
+    color: #8e9caf;
+}
+.fa-x-twitter {
+    font-size: 30px;
+    transition-duration: 0.2s;
+}
+.fa-x-twitter:hover {
+    color: #8e9caf;
+}
+
+.logo {
+    margin-left: 5vw;
+    margin-right: 10vw;
+}
+
+.instagram {
+    margin-left: -5vw;
+}
+
+.twitter {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@media (max-width:431px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        padding: 10px;
+        margin: 10px;
+    }
+    .instagram {
+        padding: 10px;
+        margin: 10px;
+    }
+    .twitter {
+        padding: 10px;
+        margin: 10px;
+    }
+}
