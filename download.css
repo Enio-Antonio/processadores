@@ -64,6 +64,21 @@ body {
     color: #8e9caf;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
  
  /* Meio do site */
 
@@ -176,4 +191,58 @@ body {
 .twitter {
     margin-left: 5vw;
     margin-right: 5vw;
+}
+
+@media (max-width: 431px) {
+    .intel button {
+        margin-right: 2vw;
+    }
+
+    .intel h1 {
+        margin-left: 3vw;
+    }
+
+    .amd button {
+        margin-right: 2vw;
+    }
+
+    .amd h1 {
+        margin-left: 3vw;
+    }
+
+    /* Parte do menu responsivo */
+
+    .hamburger{
+        display: block;
+        margin-right: 5vw;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .parte_direita{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: rgb(3, 3, 86);
+        /* background: linear-gradient(to right, #000, #fd017d); */
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 100%;
+    }
+    .nav-item{
+        margin: 16px 0;;
+    }
+    .parte_direita.active {
+        left: 0;
+    }    
 }

@@ -29,3 +29,11 @@ twitter.addEventListener("click", alertarRedesSocias);
 intel.addEventListener('click', () => {downloadFile('intel_i9.txt', './intel_i9.txt')});
 
 amd.addEventListener('click', () => {downloadFile('amd_r9', './amd_r9.txt')});
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".parte_direita");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})

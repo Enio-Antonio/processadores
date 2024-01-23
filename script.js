@@ -29,3 +29,11 @@ botaoDownload.addEventListener("click",() => {downloadFile('intel_i9.txt', './in
 instagram.addEventListener("click", alertarRedesSocias);
 
 twitter.addEventListener("click", alertarRedesSocias);
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".parte_direita");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})

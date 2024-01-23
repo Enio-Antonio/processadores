@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="tutorial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script>
-        function alertarRedesSociais() {
-            alert("Ainda não está disponível!");
-        }
-    </script>
-
 </head>
 <body>
     <header class="header">
@@ -25,6 +19,11 @@
                 <h2><a href="tutorial.html">Tutorial</a></h2>
             </div>
         </div>
+        <div class="hamburger">
+            <span class="bar"></span> 
+            <span class="bar"></span> 
+            <span class="bar"></span> 
+        </div>   
     </header>
 
     <div class="texto">
@@ -36,10 +35,11 @@
     </div>
 
     <div class="footer">
-        <div class="logo"><a class="icone" href="index.html"><i class="fa-solid fa-microchip"></i></a></div>
-        <div onclick="alertarRedesSociais()" class="instagram"><a class="icone" href=""><i class="fa-brands fa-instagram"></i></a></div>
-        <div onclick="alertarRedesSociais()" class="twitter"><a class="icone" href=""><i class="fa-brands fa-x-twitter"></i></a></div>
+        <div class="logo"><a class="icone" id="icone" href="#"><i class="fa-solid fa-microchip"></i></a></div>
+        <div class="instagram" id="instagram"><a class="icone" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        <div id="twitter" class="twitter"><a class="icone" href="#"><i class="fa-brands fa-x-twitter"></i></a></div>
     </div>
     
+    <script src="tutorial.js"></script>
 </body>
 </html>
