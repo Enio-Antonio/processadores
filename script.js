@@ -4,10 +4,6 @@ function alertarRedesSocias() {
     alert("Ainda não está disponível!");
 }
 
-function alertarTrouxa() {
-     alert("Trouxa");
-}
-
 function downloadFile(filename, url) {
     let element = document.createElement('a');
     element.setAttribute('href', url);
